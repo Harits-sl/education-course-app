@@ -5,9 +5,9 @@ export default function AuthTemplate(props) {
   return (
     <>
       <div className="min-h-screen md:flex md:flex-col">
-        <Navbar />
+        <Navbar isUseList={false} />
 
-        <main className="container max-w-[590px] px-6 py-4 m-auto">
+        <main className="container max-w-[590px]">
           <section>
             <div className="bg-primary-background border border-[#f1f1f1] rounded-sm p-5">
               <div className="text-center mb-5">

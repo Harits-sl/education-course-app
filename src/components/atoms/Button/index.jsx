@@ -1,10 +1,21 @@
 import cx from 'classnames';
 
 export default function Button(props) {
-  const { children, type, primary, secondary, disabled, contained, shadow, outlined, sso, margin } = props;
+  const {
+    children,
+    type,
+    primary,
+    secondary,
+    disabled,
+    contained,
+    shadow,
+    outlined,
+    sso,
+    margin,
+    fontWeight = 'bold',
+  } = props;
 
-  const btnClass = cx(margin, {
-    'w-full h-[34px] md:h-[42px] rounded-[10px] font-bold cursor-pointer': true,
+  const btnClass = cx(`w-full py-2.5 rounded-[10px] cursor-pointer font-${fontWeight}`, margin, {
     'bg-primary text-light-primary': primary && contained,
     'bg-primary-100 text-primary': primary && shadow,
     'text-primary border-primary': primary && outlined,

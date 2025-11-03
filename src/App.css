@@ -60,6 +60,12 @@
   --shadow-nav: '4px 8px 12px #3E434A4F 0px 0px 1px #3E434A4F';
 }
 
+@utility container {
+  padding-block: 16px;
+  padding-inline: 24px;
+  margin: auto;
+}
+
 body {
   background: #fffdf3;
 }
