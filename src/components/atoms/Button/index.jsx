@@ -13,9 +13,11 @@ export default function Button(props) {
     sso,
     margin,
     fontWeight = 'bold',
+    width,
+    widthFull,
   } = props;
 
-  const btnClass = cx(`w-full py-2.5 rounded-[10px] cursor-pointer font-${fontWeight}`, margin, {
+  const btnClass = cx(`py-2.5 px-1.5 rounded-[10px] cursor-pointer font-${fontWeight}`, margin, width, {
     'bg-primary text-light-primary': primary && contained,
     'bg-primary-100 text-primary': primary && shadow,
     'text-primary border-primary': primary && outlined,
@@ -27,6 +29,7 @@ export default function Button(props) {
     'bg-greyscale-200 text-dark-disabled border-dark-disabled': disabled && outlined,
     'flex justify-center items-center border-border': sso,
     border: outlined,
+    'w-full': widthFull,
   });
 
   return (

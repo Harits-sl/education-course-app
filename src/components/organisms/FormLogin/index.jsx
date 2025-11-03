@@ -33,6 +33,7 @@ export default function FormLogin() {
         primary
         contained
         margin="mb-4"
+        widthFull
       >
         Masuk
       </Button>
@@ -40,6 +41,7 @@ export default function FormLogin() {
         <Button
           primary
           shadow
+          widthFull
         >
           Daftar
         </Button>
@@ -50,6 +52,7 @@ export default function FormLogin() {
       <Button
         sso
         outlined
+        widthFull
       >
         <img
           src="/icons/google_icon.png"

@@ -47,6 +47,7 @@ export default function FormRegister() {
         primary
         contained
         margin="mb-4"
+        widthFull
       >
         Daftar
       </Button>
@@ -54,6 +55,7 @@ export default function FormRegister() {
         <Button
           primary
           shadow
+          widthFull
         >
           Masuk
         </Button>
@@ -64,6 +66,7 @@ export default function FormRegister() {
       <Button
         sso
         outlined
+        widthFull
       >
         <img
           src="/icons/google_icon.png"
