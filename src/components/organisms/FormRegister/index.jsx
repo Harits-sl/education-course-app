@@ -16,12 +16,14 @@ export default function FormRegister() {
         htmlFor="fullname"
         type="text"
         name="fullname"
+        border
       />
       <InputText
         title="E-Mail"
         htmlFor="email"
         type="email"
         name="email"
+        border
       />
       <InputPhoneNumber />
       <InputPassword
@@ -29,12 +31,14 @@ export default function FormRegister() {
         htmlFor="password"
         type="password"
         name="password"
+        border
       />
       <InputPassword
         title="Konfirmasi Kata Sandi"
         htmlFor="confirm-password"
         type="password"
         name="confirm-password"
+        border
       />
       <a
         href="#"

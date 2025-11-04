@@ -17,15 +17,15 @@ export default function Price(props) {
   return (
     <>
       <div className="text-primary font-poppins font-semibold text-xl md:text-2xl">
-        Rp{' '}
         <IntlProvider
           locale="id-ID"
           defaultLocale="en"
         >
           <FormattedNumber
             value={shortValue}
-            maximumFractionDigits={1}
+            maximumFractionDigits={0}
             style="currency"
+            currency="IDR"
           />
         </IntlProvider>
         {suffix}

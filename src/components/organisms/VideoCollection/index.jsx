@@ -14,7 +14,7 @@ export default function VideoCollection() {
       authorCompany: 'Gojek',
       rating: 3.5,
       totalReview: 86,
-      price: 3000000,
+      price: 300000,
     },
     {
       imgUrl: '/images/learning_2.jpg',
@@ -26,7 +26,7 @@ export default function VideoCollection() {
       authorCompany: 'Gojek',
       rating: 3.5,
       totalReview: 86,
-      price: 3000000,
+      price: 300000,
     },
     {
       imgUrl: '/images/learning_3.jpg',
@@ -38,7 +38,7 @@ export default function VideoCollection() {
       authorCompany: 'Gojek',
       rating: 3.5,
       totalReview: 86,
-      price: 3000000,
+      price: 300000,
     },
     {
       imgUrl: '/images/learning_4.jpg',
@@ -50,7 +50,7 @@ export default function VideoCollection() {
       authorCompany: 'Gojek',
       rating: 3.5,
       totalReview: 86,
-      price: 3000000,
+      price: 300000,
     },
     {
       imgUrl: '/images/learning_5.jpg',
@@ -62,7 +62,7 @@ export default function VideoCollection() {
       authorCompany: 'Gojek',
       rating: 3.5,
       totalReview: 86,
-      price: 3000000,
+      price: 300000,
     },
     {
       imgUrl: '/images/learning_6.jpg',
@@ -74,7 +74,7 @@ export default function VideoCollection() {
       authorCompany: 'Gojek',
       rating: 3.5,
       totalReview: 86,
-      price: 3000000,
+      price: 300000,
     },
     {
       imgUrl: '/images/learning_7.jpg',
@@ -86,7 +86,7 @@ export default function VideoCollection() {
       authorCompany: 'Gojek',
       rating: 3.5,
       totalReview: 86,
-      price: 3000000,
+      price: 300000,
     },
     {
       imgUrl: '/images/learning_8.jpg',
@@ -98,7 +98,7 @@ export default function VideoCollection() {
       authorCompany: 'Gojek',
       rating: 3.5,
       totalReview: 86,
-      price: 3000000,
+      price: 300000,
     },
     {
       imgUrl: '/images/learning_9.jpg',
@@ -110,7 +110,7 @@ export default function VideoCollection() {
       authorCompany: 'Gojek',
       rating: 3.5,
       totalReview: 86,
-      price: 3000000,
+      price: 300000,
     },
   ];
 
@@ -146,9 +146,10 @@ export default function VideoCollection() {
         id="learning"
         className="container grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-x-6 md:gap-y-8"
       >
-        {dataLearning.map((data) => {
+        {dataLearning.map((data, index) => {
           return (
             <CardLearning
+              key={index}
               imgUrl={data.imgUrl}
               title={data.title}
               desc={data.desc}

@@ -15,12 +15,14 @@ export default function FormLogin() {
         htmlFor="email"
         type="email"
         name="email"
+        border
       />
       <InputPassword
         title="Kata Sandi"
         htmlFor="password"
         type="password"
         name="password"
+        border
       />
       <a
         href="#"

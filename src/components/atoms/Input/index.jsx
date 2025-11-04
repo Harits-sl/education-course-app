@@ -1,9 +1,20 @@
 import cx from 'classnames';
 
 export default function Input(props) {
-  const { name, type, width = 'w-full' } = props;
+  const {
+    name,
+    type,
+    placeholder,
+    width = 'w-full',
+    height = 'h-12',
+    rounded = 'rounded-md',
+    border,
+    className,
+  } = props;
 
-  const inputClass = cx('border border-border h-12 rounded-md mt-1 px-2.5 py-1', width);
+  const inputClass = cx('px-2.5 py-1', width, height, rounded, className, {
+    'border border-border': border,
+  });
 
   return (
     <input
@@ -11,6 +22,7 @@ export default function Input(props) {
       name={name}
       id={name}
       className={inputClass}
+      placeholder={placeholder}
       required
     />
   );

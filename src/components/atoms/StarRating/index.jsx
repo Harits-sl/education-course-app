@@ -7,7 +7,7 @@ export default function StarRating(props) {
 
   return (
     <div className="flex items-center">
-      {stars.map((star) => {
+      {stars.map((star, index) => {
         const src =
           rating >= star
             ? '/icons/star_fill.png'
@@ -17,6 +17,7 @@ export default function StarRating(props) {
 
         return (
           <img
+            key={index}
             src={src}
             alt="star"
             width={size}

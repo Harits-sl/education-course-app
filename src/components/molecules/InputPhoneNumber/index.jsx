@@ -38,6 +38,7 @@ export default function InputPhoneNumber() {
           type="tel"
           name="telphone"
           width="grow min-w-[0] sm:grow-8"
+          border
         />
       </div>
     </div>

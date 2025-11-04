@@ -15,9 +15,10 @@ export default function Button(props) {
     fontWeight = 'bold',
     width,
     widthFull,
+    display,
   } = props;
 
-  const btnClass = cx(`py-2.5 px-1.5 rounded-[10px] cursor-pointer font-${fontWeight}`, margin, width, {
+  const btnClass = cx(`py-2.5 px-1.5 rounded-[10px] cursor-pointer font-${fontWeight}`, margin, width, display, {
     'bg-primary text-light-primary hover:bg-primary/90': primary && contained,
     'bg-primary-100 text-primary hover:bg-primary-100/80': primary && shadow,
     'text-primary border-primary': primary && outlined,
