@@ -18,8 +18,8 @@ export default function Button(props) {
   } = props;
 
   const btnClass = cx(`py-2.5 px-1.5 rounded-[10px] cursor-pointer font-${fontWeight}`, margin, width, {
-    'bg-primary text-light-primary': primary && contained,
-    'bg-primary-100 text-primary': primary && shadow,
+    'bg-primary text-light-primary hover:bg-primary/90': primary && contained,
+    'bg-primary-100 text-primary hover:bg-primary-100/80': primary && shadow,
     'text-primary border-primary': primary && outlined,
     'bg-secondary text-light-primary': secondary && contained,
     'bg-secondary-100 text-secondary': secondary && shadow,
