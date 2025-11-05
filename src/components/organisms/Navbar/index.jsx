@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { LogOut, Menu, X } from 'lucide-react';
 import Divider from '../../atoms/Divider';
+import Item from './item';
 
 export default function Navbar(props) {
   const { isUseList = true } = props;
@@ -28,15 +29,28 @@ export default function Navbar(props) {
               >
                 Kategori
               </a>
-              <a
-                href="#"
-                className="flex items-center font-medium text-dark-secondary mt-2"
-              >
+              <div className="md:relative">
                 <img
                   src="/images/avatar_icon.png"
                   className="w-11 h-11 rounded-[10px] mr-2"
+                  onClick={() => setOpen(!open)}
                 />
-              </a>
+                {open && (
+                  <div className=" block absolute top-14 bg-primary-background right-0 border-b border-border rounded-b-sm md:shadow-2xl">
+                    <div className="">
+                      <Item href="/#">Profil Saya</Item>
+                      <Item href="/#">Kelas Saya</Item>
+                      <Item href="/#">Pesanan Saya</Item>
+                      <Item href="/#">
+                        <div className="inline-flex items-center gap-1 text-tertiary">
+                          Keluar <LogOut size={24} />
+                        </div>
+                      </Item>
+                      <Divider margin="mt-2 mb-1" />
+                    </div>
+                  </div>
+                )}
+              </div>
             </div>
 
             {/* Mobile Button */}
@@ -49,25 +63,18 @@ export default function Navbar(props) {
 
             {/* Mobile Menu */}
             {open && (
-              <div className="md:hidden block absolute top-18 bg-primary-background left-0 w-full border-b border-border">
-                <div className="container">
-                  <a
-                    href="#"
-                    className="font-medium text-dark-secondary"
-                  >
-                    Kategori
-                  </a>
-                  <Divider margin="my-2" />
-                  <a
-                    href="#"
-                    className="flex items-center font-medium text-dark-secondary mt-2"
-                  >
-                    <img
-                      src="/images/avatar_icon.png"
-                      className="w-11 h-11 rounded-[10px] mr-2"
-                    />
-                    Profile
-                  </a>
+              <div className="md:hidden block absolute top-14 bg-primary-background left-0 w-full border-b border-border rounded-b-sm">
+                <div className="">
+                  <Item href="/#">Kategori</Item>
+                  <Item href="/#">Profil Saya</Item>
+                  <Item href="/#">Kelas Saya</Item>
+                  <Item href="/#">Pesanan Saya</Item>
+                  <Item href="/#">
+                    <div className="inline-flex items-center gap-1 text-tertiary">
+                      Keluar <LogOut size={24} />
+                    </div>
+                  </Item>
+                  <Divider margin="mt-2 mb-1" />
                 </div>
               </div>
             )}
