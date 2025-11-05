@@ -125,7 +125,7 @@ export default function VideoCollection() {
       <div className="category">
         <ListCategory>
           <List
-            margin="ml-5 sm:ml-0"
+            margin="ml-5 mb-3 sm:ml-0"
             href="/#"
             isActive
           >
@@ -135,7 +135,7 @@ export default function VideoCollection() {
           <List href="/#">Desain</List>
           <List href="/#">Pengembangan Diri</List>
           <List
-            margin="mr-5 sm:mr-0"
+            margin="mr-5 mb-3 sm:mr-0"
             href="/#"
           >
             Bisnis

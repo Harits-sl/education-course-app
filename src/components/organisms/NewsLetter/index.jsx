@@ -33,6 +33,7 @@ export default function NewsLetter() {
             secondary
             contained
             type="submit"
+            padding="py-2.5 px-1.5 md:px-6.5"
           >
             Subscribe
           </Button>
