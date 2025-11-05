@@ -4,6 +4,7 @@ import InputPassword from '../../molecules/InputPassword';
 import Button from '../../atoms/Button';
 import Divider from '../../atoms/Divider';
 import InputPhoneNumber from '../../molecules/InputPhoneNumber';
+import SelectGender from '../../molecules/SelectGender';
 
 export default function FormRegister() {
   return (
@@ -25,6 +26,14 @@ export default function FormRegister() {
         name="email"
         border
       />
+      <SelectGender
+        title="Jenis Kelamin"
+        htmlFor="gender"
+        name="gender"
+      >
+        <option value="wanita">Wanita</option>
+        <option value="laki-laki">Laki-Laki</option>
+      </SelectGender>
       <InputPhoneNumber />
       <InputPassword
         title="Kata Sandi"
