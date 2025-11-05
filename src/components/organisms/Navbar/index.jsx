@@ -41,7 +41,7 @@ export default function Navbar(props) {
                       <Item href="/#">Profil Saya</Item>
                       <Item href="/#">Kelas Saya</Item>
                       <Item href="/#">Pesanan Saya</Item>
-                      <Item href="/#">
+                      <Item href="/login">
                         <div className="inline-flex items-center gap-1 text-tertiary">
                           Keluar <LogOut size={24} />
                         </div>
@@ -69,7 +69,7 @@ export default function Navbar(props) {
                   <Item href="/#">Profil Saya</Item>
                   <Item href="/#">Kelas Saya</Item>
                   <Item href="/#">Pesanan Saya</Item>
-                  <Item href="/#">
+                  <Item href="/login">
                     <div className="inline-flex items-center gap-1 text-tertiary">
                       Keluar <LogOut size={24} />
                     </div>
